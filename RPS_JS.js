@@ -28,9 +28,9 @@ function playRound(newPlayerSelection, computerSelection) {
 let playerScore = 0;
 let computerScore = 0;
 let tieScore = 0;
-let roundResult = playRound();
 
 function game() {
+    let roundResult = playRound();
     for (let i = 0; i < 4; i++) { //what is going to be loop
         playerSelection = prompt("lets play rock papper scissors");
 
