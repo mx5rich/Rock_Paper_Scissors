@@ -6,8 +6,7 @@ function getComputerChoice() {
 }
 
 
-let playerSelection = prompt("Please choose rock, paper, or scissors: ");
-let newPlayerSelection = playerSelection.toLowerCase();
+// let playerSelection = prompt("Please choose rock, paper, or scissors: ");  let newPlayerSelection = playerSelection.toLowerCase(); //
 
 let computerSelection = getComputerChoice();
 
@@ -31,25 +30,28 @@ let tieScore = 0;
 
 function game() {
     let roundResult = playRound();
-    for (let i = 0; i < 4; i++) { //what is going to be loop
+    for (let i = 0; i < 4; i++) { 
         playerSelection = prompt("lets play rock papper scissors");
 
         console.log("you choose " + playerSelection.toLowerCase());
 
         console.log("The computer choose " + computerSelection);
 
-        console.log(playRound(playerSelection, computerSelection));
+       console.log(playRound(playerSelection, computerSelection)); 
 
         playRound();
 
         if (roundResult === 'You win! rock beats scissors' || 'You win! paper beats rock' || 'You win! scissors beats paper') {
             ++playerScore;
-        } else if (roundResult === 'You lose! rock loses to paper' || 'You lose! paper loses to scissors' || 'You lose! scissors loses to rock') {
+        } else if (roundResult === 'You lose! rock loses to paper' || 'You lose! paper loses to scissors ' || 'You lose! scissors loses to rock') {
             ++computerScore;
         } else {
             ++tieScore;
         }
     }
+
+        console.log("Player score: " + playerScore + " ComputerScore: " + computerScore);
+        
     if (playerScore > computerScore) {
         return "You Win this game.\n -------";
     }
@@ -61,6 +63,6 @@ function game() {
     }
 }
 
-console.log(game());
+console.log(game(playRound()));
 
 console.log("The final score is " + playerScore + " to " + computerScore + " and this many ties " + tieScore);
