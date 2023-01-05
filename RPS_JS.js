@@ -9,8 +9,8 @@ let playerScore = 0;
 let computerScore = 0;
 let tieScore = 0;
 
-let playerSelection = prompt("Please choose rock, paper, or scissors: ");  
-let newPlayerSelection = playerSelection.toLowerCase(); 
+// let playerSelection = prompt("Please choose rock, paper, or scissors: ");  //
+// let newPlayerSelection = playerSelection.toLowerCase(); 
 
 let computerSelection = getComputerChoice();
 
@@ -34,7 +34,7 @@ function playRound(newPlayerSelection, computerSelection) {
     }
 }
 
-function game() {
+/* function game() {
     for (let i = 0; i < 5; i++) { 
         let playerSelection = prompt("Please choose rock, paper, or scissors: ");  
         let newPlayerSelection = playerSelection.toLowerCase(); 
@@ -61,6 +61,6 @@ function game() {
     }
 }
 
-console.log(game());
+console.log(game()); */
 
 console.log("The final score is " + playerScore + " to " + computerScore + " and this many ties " + tieScore);

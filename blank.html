@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type ="text/javascript" src="RPS_JS.js"></script>
+    <title>Rock Paper Scissors Project</title>
+    <script type ="text/javascript" src="RPS_JS.js" defer></script>
 </head>
 <body>
+    <div class = "flex">
+        <h1>Rock Paper Scissors</h1>
+        <h2>So what's it gonna be? Choose one</h2>
+        <h3>Win 5 rounds first to claim victory!</h3>
+    </div>
+    <div class = optionButton>
+        <button id ="r">Rock</button>
+        <button id ="p">Paper</button>
+        <button id ="s">Scissors</button>
+    </div>
+    <div class ="labels">
+        <span id="playerLabel">Player Score</span>
+        <span id="compLabel">Computer Score</span>
+    </div>
+    <div class ="scores">
+        <div id="playerScore"></div>
+        <div id="computerScore"></div>
+    </div>
+    <div>
+        <span id="resultsLavel">Results</span>
+    </div>
+
+    <div id="roundResults"></div>
+
+    <div>
+        <button id="reset">
+            Play Again?
+        </button>
+    </div>
 </body>
 </html>
